@@ -1,0 +1,122 @@
+.olx-container {
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+}
+
+/* Header */
+.olx-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.location-dropdown {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.header-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.profile-icon {
+  background: gray;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+}
+
+.sell-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Categories */
+.olx-categories {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  background: #eee;
+  font-size: 14px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Fresh Recommendations - Horizontal Layout */
+.recommendations {
+  padding: 20px;
+}
+
+.recommendations h2 {
+  margin-bottom: 15px;
+}
+
+/* Cards in Horizontal Layout */
+.cards-horizontal {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.card-horizontal {
+  display: flex;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 300px;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-horizontal img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.card-details {
+  flex-grow: 1;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.date {
+  color: gray;
+  font-size: 12px;
+}

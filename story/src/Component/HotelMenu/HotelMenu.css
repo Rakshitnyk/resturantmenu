@@ -1,0 +1,148 @@
+.hotel-menu-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+  
+  .hotel-menu-header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .hotel-menu-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #343a40;
+  }
+  
+  .hotel-menu-subtitle {
+    color: #6c757d;
+    margin-top: 0.5rem;
+  }
+  
+  .hotel-menu-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .category-button {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #f1f3f5;
+  }
+  
+  .category-button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .hotel-menu-items {
+    flex: 1;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+  }
+  
+  .menu-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-item-image {
+    height: 180px;
+    overflow: hidden;
+  }
+  
+  .menu-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .menu-item-content {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-item-name {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #343a40;
+  }
+  
+  .menu-item-description {
+    margin: 0 0 1rem 0;
+    color: #6c757d;
+    font-size: 0.9rem;
+    flex: 1;
+  }
+  
+  .menu-item-price {
+    margin: 0;
+    font-weight: bold;
+    color: #28a745;
+    font-size: 1.1rem;
+    align-self: flex-end;
+  }
+  
+  .hotel-menu-footer {
+    background-color: #212529;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+  }
+  
+  .hotel-menu-loading,
+  .hotel-menu-error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #6c757d;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hotel-menu-items {
+      grid-template-columns: 1fr;
+    }
+    
+    .hotel-menu-header h1 {
+      font-size: 2rem;
+    }
+  }

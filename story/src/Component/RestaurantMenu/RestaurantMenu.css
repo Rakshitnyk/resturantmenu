@@ -1,0 +1,198 @@
+.restaurant-menu {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .restaurant-header {
+    width: 100%;
+    position: relative;
+    text-align: left;
+  }
+  
+  .restaurant-banner {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .restaurant-name {
+    margin: 10px 16px 4px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .restaurant-address {
+    margin: 0 16px 12px;
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .category-filters {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 12px;
+    gap: 10px;
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    white-space: nowrap;
+  }
+  
+  .category-filter {
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #333;
+    border: 1px solid #ddd;
+  }
+  
+  .category-filter.active {
+    background-color: #2196f3;
+    color: white;
+    border-color: #2196f3;
+  }
+  
+  .menu-items-container {
+    padding: 10px 0;
+  }
+  
+  .menu-item-card {
+    background-color: white;
+    margin: 10px 0;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item-content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  .menu-item-image-container {
+    width: 80px;
+    height: 80px;
+    margin-right: 12px;
+    flex-shrink: 0;
+  }
+  
+  .menu-item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 100%;
+    border: 1px solid #ffffff;
+    flex-direction: row;
+  }
+  
+  .menu-item-details {
+    flex-grow: 1;
+  }
+  
+  .menu-item-name {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .menu-item-description {
+    margin: 0 0 8px;
+    font-size: 0.85rem;
+    color: #111010;
+    line-height: 1.4;
+  }
+  
+  .menu-item-price {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item-badges {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .veg-badge {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #388e3c;
+    font-weight: 500;
+  }
+  
+  .veg-icon {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #388e3c;
+    border-radius: 2px;
+    margin-right: 4px;
+    position: relative;
+  }
+  
+  .veg-icon::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #388e3c;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .category-badge {
+    background-color: #2196f3;
+    color: white;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  /* For small screens */
+  @media (max-width: 500px) {
+    .restaurant-name {
+      font-size: 1.3rem;
+    }
+  
+    .restaurant-address {
+      font-size: 0.8rem;
+    }
+  
+    .menu-item-content {
+      align-items: center;
+    }
+  
+    .menu-item-description {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Hide scrollbar for category filters */
+  .category-filters::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .category-filters {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  

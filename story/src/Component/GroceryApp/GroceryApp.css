@@ -1,0 +1,120 @@
+ .grocery-app {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.content-area {
+  display: flex;
+  gap: 20px;
+}
+
+.left-content {
+  flex: 3;
+}
+
+.right-content {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.popular-products .product-list {
+  display: flex;
+  gap: 10px;
+}
+
+.discount-shop .discounts {
+  display: flex; /* Horizontal layout */
+  gap: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.discount-card img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.order-item img {
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+}
+/* Popular Products - Image Size */
+.product-card img {
+  width: 100px; /* Adjusted to be similar to the reference image */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Discount Shop - Horizontal Layout with Fixed Image Size */
+.discount-shop .discounts {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+}
+/* Last Order - Image Size */
+.order-item img {
+  width: 60px; /* Made smaller like in the reference */
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* Discount Shop - Exact Layout */
+.discount-shop {
+  margin-top: 20px;
+}
+
+.discount-shop .discounts {
+  display: flex;
+  justify-content: space-between; /* Align images properly */
+  gap: 15px;
+}
+
+.discount-card {
+  width: 23%; /* Ensures 4 cards fit in one row */
+  background: #cccecc; /* Match UI */
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.discount-card img {
+  width: 100%; /* Full width inside card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px;
+}
+
+.discount-card p {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #2a7c47;
+} 
